@@ -14,7 +14,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Install prerequisites
-        run: chmod +x .github/workflows/generate_cv.sh && .github/workflows/package_install.sh
+        run: chmod +x .github/workflows/package_install.sh && .github/workflows/package_install.sh
       - name: Generate english and greek pdfs
         run: chmod +x .github/workflows/generate_cv.sh && .github/workflows/generate_cv.sh
       - name: Publish CVs
