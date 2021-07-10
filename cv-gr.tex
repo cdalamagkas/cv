@@ -2,10 +2,9 @@
 \documentclass{mycv}
 
 %%%%% LANGUAGE AND FONTS 
-\usepackage[english,greek]{babel}
-%\usepackage{xltxtra,xgreek,fontspec}
-\usepackage[OT1]{fontenc}
-\usepackage{gfsdidot} 			 % main font
+%\usepackage[english,greek]{babel}
+\usepackage{xltxtra,xgreek,fontspec} 			 
+\setmainfont{GFS Didot}                % main font
 %\setmonofont{Courier New}			 	 % for commands
 \usepackage[greek]{datetime2} 		 % show greek date correctly using \today command
 \renewcommand{\today}{\ifcase\month\or%
@@ -14,7 +13,7 @@
 	\or Αύγουστος\or Σεπτέμβριος\or% 
 	Οκτώβριος\or Νοέμβριος\or% 
 	Δεκέμβριος\fi\ \number \year}			 % nominative instead of genitive 
-%\usepackage{amsmath}
+\usepackage{amsmath}
 
 \hypersetup{%
   pdftitle={Χρήστος Δαλαμάγκας - Βιογραφικό},

@@ -1,9 +1,10 @@
+%!TEX root = cv-gr.tex
 \LoadClass{article}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{mycv}[2016/10/23 My custom CV class]
 \RequirePackage{titlesec}
 \RequirePackage[hidelinks,unicode]{hyperref}
-\RequirePackage[T1]{fontenc}
+\RequirePackage[OT1,T1]{fontenc}
 \RequirePackage{microtype}
 \RequirePackage{lmodern}
 \RequirePackage{marginnote}
@@ -100,4 +101,3 @@
 	\linkedin{#5} {\Large\textperiodcentered} %
 	\github{#6}\\[0.5cm]
 }
-
