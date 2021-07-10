@@ -18,8 +18,11 @@ jobs:
       - name: Generate english and greek pdfs
         run: chmod +x .github/workflows/generate_cv.sh && .github/workflows/generate_cv.sh
       - name: Publish CVs
-        uses: ncipollo/release-action@v1.8.6
+        uses: marvinpinto/action-automatic-releases@v1.2.1
         with:
-          artifacts: "cdalamagkas-cv-gr.pdf,cdalamagkas-cv-en.pdf"
-          artifactContentType: "application/pdf"
-          token: ${{ secrets.GITHUB_TOKEN }}
+          automatic_release_tag: "latest"
+          prerelease: false
+          files: |
+            cdalamagkas-cv-gr.pdf
+            cdalamagkas-cv-en.pdf
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
