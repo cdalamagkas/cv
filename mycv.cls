@@ -15,6 +15,7 @@
 \setlength{\parindent}{0pt}
 \RequirePackage{array}
 \RequirePackage{etoolbox}
+\RequirePackage{fontawesome5}
 \graphicspath{{assets/}}
 
 \newenvironment{Itemize}{\begin{itemize}\setlength\itemsep{0cm}}{\end{itemize}}
@@ -70,27 +71,27 @@
 }
 
 \newcommand{\mobile}[1]{
-\includegraphics[scale=0.032]{mobile}\ #1
+\faMobile*\ #1
 }
 
 \newcommand{\email}[1]{
-\includegraphics[scale=0.02]{gmail}\ \href{mailto:#1}{#1}
+\faEnvelope\ \href{mailto:#1}{#1}
 }
 
 \newcommand{\skype}[1]{
-\includegraphics[scale=0.0125]{skype}\ \href{skype:chat?#1}{#1}
+\faSkype\ \href{skype:chat?#1}{#1}
 }
 
 \newcommand{\homepage}[1]{
-\includegraphics[scale=0.02]{homepage}\ \href{#1}{#1}
+\faHome\ \href{#1}{#1}
 }
 
 \newcommand{\linkedin}[1]{
-\includegraphics[scale=0.02]{linkedin}\ \href{https://www.#1}{#1}
+\faLinkedin\ \href{https://www.#1}{#1}
 }
 
 \newcommand{\github}[1]{
-\includegraphics[scale=0.02]{github}\ \href{https://github.com/#1}{#1}
+\faGithub\ \href{https://github.com/#1}{#1}
 }
 
 \newcommand{\contact}[6]{

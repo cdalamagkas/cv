@@ -9,14 +9,12 @@ jobs:
   generate-cv:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/chriskar96/ubuntu-latex-docker-image:main
+      image: cdal/dockerimagelatex:latest        
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: Install prerequisites
-        run: chmod +x .github/workflows/package_install.sh && .github/workflows/package_install.sh
       - name: Generate english and greek pdfs
         run: chmod +x .github/workflows/generate_cv.sh && .github/workflows/generate_cv.sh
       - name: Publish CVs
