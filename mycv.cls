@@ -94,11 +94,16 @@
 \faGithub\ \href{https://github.com/#1}{#1}
 }
 
-\newcommand{\contact}[6]{
+\newcommand{\orcid}[1]{
+	\faOrcid\ \href{https://orcid.org/#1}{#1}
+}
+
+\newcommand{\contact}[7]{
     \mobile{#1} {\Large\textperiodcentered} %
 	\email{#2} {\Large\textperiodcentered} %
 	\skype{#3}\\[0.25cm]
 	\homepage{#4} {\Large\textperiodcentered} %
 	\linkedin{#5} {\Large\textperiodcentered} %
-	\github{#6}\\[0.5cm]
+	\github{#6}\\[0.5cm]%
+	\orcid{#7}
 }
