@@ -17,6 +17,8 @@
 \RequirePackage{etoolbox}
 \RequirePackage{fontawesome5}
 \graphicspath{{assets/}}
+\RequirePackage[style=ieee]{biblatex}
+\addbibresource{references.bib}
 
 \newenvironment{Itemize}{\begin{itemize}\setlength\itemsep{0cm}}{\end{itemize}}
 
