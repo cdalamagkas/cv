@@ -41,7 +41,7 @@
 	\vspace{#5}\includegraphics[width=#7\textwidth]{#6}
 	\end{minipage}%\hspace*{0.25cm}%
 	\begin{minipage}{0.9\textwidth}
-		\datedentry{#1}{#2}{#3}{#4}
+		{\sc\datedentry{#1}{#2}{#3}{#4}}
 }{		
 	\end{minipage}
 }
@@ -80,10 +80,6 @@
 \faEnvelope\ \href{mailto:#1}{#1}
 }
 
-\newcommand{\skype}[1]{
-\faSkype\ \href{skype:chat?#1}{#1}
-}
-
 \newcommand{\homepage}[1]{
 \faHome\ \href{#1}{#1}
 }
@@ -101,11 +97,10 @@
 }
 
 \newcommand{\contact}[7]{
-    \mobile{#1} {\Large\textperiodcentered} %
-	\email{#2} {\Large\textperiodcentered} %
-	\skype{#3}\\[0.25cm]
-	\homepage{#4} {\Large\textperiodcentered} %
-	\linkedin{#5} {\Large\textperiodcentered} %
-	\github{#6}\\[0.5cm]%
-	\orcid{#7}
+    \mobile{#1}{\Large\textperiodcentered}%
+	\email{#2}{\Large\textperiodcentered}%
+	\homepage{#3}\\[0.25cm]%
+	\linkedin{#4}{\Large\textperiodcentered}%
+	\github{#5}\\[0.5cm]%
+	\orcid{#6}{\Large\textperiodcentered}
 }
